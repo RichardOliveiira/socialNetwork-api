@@ -4,7 +4,8 @@ const router = express.Router()
 
 
 router.post("/create-user-db", controller.createUsers)
-router.post("/create-user-fireauth", controller.loginWithEmail)
+router.post("/create-user-email", controller.registerWithEmail)
+router.post("/login-with-email", controller.loginWithEmail)
 
 
 router.get("/verify-username-login/:username", controller.verifyUsernameLogin)
